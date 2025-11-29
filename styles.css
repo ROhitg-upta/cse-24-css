@@ -1,0 +1,42 @@
+.container {
+  display: grid;
+    height : 500px;
+    border: red;
+    width : 500px;
+    background-color: blue;
+grid-template-columns: 4,1fr;
+grid-template-rows: repeat(3,1fr);
+  grid-template-areas:  
+   "header header header header"
+  "main main.slidebar"
+  "footer footer footer footer";
+  justify-items: center;
+  align-items: center;
+  
+                      
+column-gap: 10px;
+}
+.item{
+  height : 100px;
+  width : 100px;
+  background-color: red;
+  text-align: center;
+  
+ }
+
+ /* .item1 {
+  grid-area: header; 
+
+}
+.item2 {
+  grid-area: main;
+
+}
+.item3 {
+  grid-area: slidebar ;
+
+}
+.item4 {
+  grid-area: footer ;
+
+}   */
