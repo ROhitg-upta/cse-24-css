@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Quiz Card | Rohit</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="app">
+        <header class="app-header">
+            <h1 class="app-title">Quick Quiz</h1>
+            <p class="app-subtitle">HTML & CSS basics – single question demo.</p>
+        </header>
+
+        <main class="quiz-card">
+            <div class="quiz-meta">
+                <span class="badge">MCQ</span>
+                <span class="badge badge-easy">Level: Beginner</span>
+            </div>
+
+            <h2 class="question">
+                Which language is used to style the layout of web pages?
+            </h2>
+
+            <form class="options">
+                <label class="option">
+                    <input type="radio" name="answer" />
+                    <span class="option-mark">A</span>
+                    <span class="option-text">HTML</span>
+                </label>
+
+                <label class="option correct">
+                    <input type="radio" name="answer" />
+                    <span class="option-mark">B</span>
+                    <span class="option-text">CSS</span>
+                </label>
+
+                <label class="option">
+                    <input type="radio" name="answer" />
+                    <span class="option-mark">C</span>
+                    <span class="option-text">C++</span>
+                </label>
+
+                <label class="option">
+                    <input type="radio" name="answer" />
+                    <span class="option-mark">D</span>
+                    <span class="option-text">SQL</span>
+                </label>
+
+                <p class="note">
+                    *This is a static UI project – no JavaScript, only HTML &amp; CSS.
+                </p>
+            </form>
+
+            <div class="result-hint">
+                <p class="hint-correct">B is the correct answer (CSS = Cascading Style Sheets).</p>
+            </div>
+        </main>
+
+        <footer class="app-footer">
+            <span>Project by Rohit Gupta · 1st year B.Tech</span>
+        </footer>
+    </div>
+</body>
+</html>
