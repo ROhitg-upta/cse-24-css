@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do List | Rohit</title>
+    <link rel="stylesheet" href="style2.css" />
+</head>
+<body>
+    <div class="app">
+        <header class="app-header">
+            <h1 class="app-title">To-Do List</h1>
+            <p class="app-subtitle">Stay organized. Add, complete, and delete your tasks.</p>
+        </header>
+
+        <main>
+            <section class="task-input-section">
+                <form id="task-form" class="task-form">
+                    <input
+                        type="text"
+                        id="task-input"
+                        class="task-input"
+                        placeholder="Enter a new task..."
+                        autocomplete="off"
+                        required
+                    />
+                    <button type="submit" class="btn add-btn">Add Task</button>
+                </form>
+            </section>
+
+            <section class="task-list-section">
+                <div class="task-list-header">
+                    <h2>Your Tasks</h2>
+                    <button id="clear-completed" class="btn clear-btn">
+                        Clear Completed
+                    </button>
+                </div>
+                <ul id="task-list" class="task-list">
+                    <!-- Tasks will be added here by JavaScript -->
+                </ul>
+                <div class="task-footer">
+                    <span id="task-count">0 tasks</span>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
