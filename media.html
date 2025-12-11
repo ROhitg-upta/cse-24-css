@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Responsive Navigation</title>
+<style>
+.body
+{ margin:
+0;
+font-family: Arial, sans-serif;
+}
+.nav {
+display: flex;
+justify-content: space-between;
+align-items: center;
+background: #333;
+padding: 1rem;
+}
+.logo
+{ color:
+#fff;
+font-size: 1.5rem;
+}
+.menu
+{ display:
+none;
+flex-direction: column;
+background: #444;
+position: absolute;
+top: 60px;
+right: 20px;
+width: 200px;
+}
+.menu a { color:
+#fff; padding:
+1em;
+text-decoration: none;
+display: block;
+}
+.hamburger
+{ font-size:
+2rem; color:
+#fff; cursor:
+pointer;
+}
+/* Tablet & Desktop */
+@media (min-width: 768px) {
+.menu
+{ display:
+flex;
+flex-direction: row;
+position: static;
+background: none;
+width: auto;
+}
+.hamburger
+{ display: none;
+}
+}
+</style>
+</head>
+<body>
+<nav class="nav">
+<div class="logo">MySite</div>
+<div class="hamburger">☰<i class="fa-solid fa-bar"></i> </div>
+<div class="menu">
+<a href="#">Home</a>
+<a href="#">About</a>
+<a href="#">Services</a>
+<a href="#">Contact</a>
+</div>
+</nav>
+</body>
+</html>
